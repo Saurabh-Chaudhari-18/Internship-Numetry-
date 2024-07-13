@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <h4>Please fill Form</h4>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="fullName">
+                <span class="error-message" id="fullNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="text" id="email" name="email" placeholder="email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="mobile">
+                <span class="error-message" id="mobileError"></span>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="username">
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage" class="success-message"></p>
+        <a href="table.html">View Registered Users</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

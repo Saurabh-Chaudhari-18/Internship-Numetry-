@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: rgb(149 13 82);
+    color: white;
+    text-align:left;
+    width: 97.4%;
+    padding: 20px ;
+}
+
+.container {
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+}
+
+.sidebar {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #50f150;
+    width: 30%;
+    padding: 20px;
+}
+
+.content {
+    /* width: 70%; */
+    padding: 20px;
+    background-color: #e5f5fb;
+}
+
+.footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #d72222;
+    color: white;
+    text-align:left;
+    padding: 20px ;
+    position: absolute;
+    width: 97.4%;
+    height: 5.3%;
+    bottom:auto;
+}
+
+.sidebar h2, .sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
