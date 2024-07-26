@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="button" onclick="sendEmailOTP()">Send Email OTP</button><br><br>
+            <input type="text" id="emailOtp" placeholder="Enter Email OTP"><br><br>
+            <button type="button" onclick="verifyEmailOTP()">Verify Email OTP</button><br><br>
+            <button type="button" onclick="sendMobileOTP()">Send Mobile OTP</button><br><br>
+            
+            <div id="recaptcha-container"></div>
+            <input type="text" id="mobileOtp" placeholder="Enter Mobile OTP"><br><br>
+            <button type="button" onclick="verifyMobileOTP()">Verify Mobile OTP</button><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
