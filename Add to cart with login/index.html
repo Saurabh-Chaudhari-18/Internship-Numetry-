@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <button id="logoutBtn" class="button">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Products</h1>
+        <div class="products">
+            <div class="product" data-id="1" data-name="Wings of Fire" data-price="350">
+                <div class="product-info">
+                    <h2>Wings of Fire</h2>
+                    <h4>Dr. A P J Abdul Kalam</h4>
+                    <p>Price: ₹350</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <img src="./images/image.png" alt="Wings of Fire">
+            </div>
+            <div class="product" data-id="2" data-name="The Life of Mahatma Gandhi" data-price="350">
+                <div class="product-info">
+                    <h2>The Life of Mahatma Gandhi</h2>
+                    <h4>Louis Fischer</h4>
+                    <p>Price: ₹500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <img src="./images/mahatma gandhi.jpg" alt="The Life of Mahatma Gandhi">
+            </div>
+            <div class="product" data-id="3" data-name="Shivaji the Great Maratha" data-price="420">
+                <div class="product-info">
+                    <h2>Shivaji the Great Maratha</h2>
+                    <h4>Ranjit Desai</h4>
+                    <p>Price: ₹420</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <img src="./images/Shivaji Maharaj.jpg" alt="Shivaji the Great Maratha">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
