@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira-like Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="to-do">
+            <h2>To Do</h2>
+            <button class="add-task-button" onclick="openTaskModal('add', 'to-do')">Add Task</button>
+        </div>
+        <div class="column" id="in-progress">
+            <h2>In Progress</h2>
+            <!-- <button class="add-task-button" onclick="openTaskModal('add', 'in-progress')">Add Task</button> -->
+        </div>
+        <div class="column" id="done">
+            <h2>Done</h2>
+            <!-- <button class="add-task-button" onclick="openTaskModal('add', 'done')">Add Task</button> -->
+        </div>
+    </div>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTaskModal()">&times;</span>
+            <h2 id="modalTitle">Add Task</h2>
+            <input type="hidden" id="taskId">
+            <input type="hidden" id="taskColumn">
+            <div>
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName">
+            </div>
+            <button onclick="saveTask()">Save Task</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
